@@ -25,7 +25,6 @@ describe '#reverse_string' do
     expect(reverse_string('hello')).to eq('olleh')
     expect(reverse_string('hi')).to eq('ih')
   end
-  
   it 'does not use the built-in .reverse or .reverse! methods' do
     expect_any_instance_of(String).not_to receive(:reverse)
     expect_any_instance_of(String).not_to receive(:reverse!)
